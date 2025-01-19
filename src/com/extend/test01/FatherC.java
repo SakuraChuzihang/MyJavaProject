@@ -1,8 +1,8 @@
 package com.extend.test01;
 
 public class FatherC {
-    public Static void main(String[] args)
+    public static void main(String[] args)
     {
-
+        System.out.println("这是来测试一下我的github是否push成功");
     }
 }
