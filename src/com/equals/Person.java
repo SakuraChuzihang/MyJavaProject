@@ -37,6 +37,18 @@ public class Person {
 
     @Override
     public boolean equals(Object obj) {
-        return super.equals(obj);
+       if(obj instanceof Person){
+           Person person = (Person)obj;
+           if(person.getName().equals(this.name) && person.getAge() == this.age && person.getGender() == this.gender){
+               return true;
+           }
+           else{
+               return false;
+           }
+       }
+
+       else{
+           return obj == this;
+       }
     }
 }
